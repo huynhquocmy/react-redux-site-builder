@@ -1,0 +1,106 @@
+.login {
+	width: 100%;
+	box-sizing: border-box;
+	height: 100vh;
+	background-color: black;
+	position: relative;
+}
+
+.logo {
+	position: relative;
+	padding: 20px;
+	img {
+		width: 120px;
+	}
+}
+
+.loginForm {
+	position: absolute;
+	top: calc(50% - 150px);
+	left: calc(50% - 150px);
+	width: 300px;
+	color: white;
+	h3 {
+		text-align: center;
+		margin-bottom: 30px;
+	}
+}
+
+.loginItem {
+	margin-bottom: 30px;
+	display: flex;
+	align-items: flex-end;
+	i {
+		width: 30px;
+		text-align: center;
+		opacity: 0.7;
+		font-size: 15px;
+	}
+	input {
+		background-color: transparent;
+		border: none;
+		padding: 5px;
+		padding-bottom: 10px;
+		font-size: 15px;
+		border-bottom: 1px solid #eee;
+		width: 100%;
+		box-sizing: border-box;
+		outline: 0;
+		color: white;
+		flex-grow: 1;
+	}
+	input:-webkit-autofill {
+	    -webkit-box-shadow: 0 0 0 1000px transparent inset !important;
+	}
+	input:-webkit-autofill,
+	input:-webkit-autofill:hover,
+	input:-webkit-autofill:focus,
+	input:-webkit-autofill:active {
+	    -webkit-transition-delay: 9999s;
+	    -webkit-transition: color 9999s ease-out, background-color 9999s ease-out;
+	}
+	&:hover {
+		i {
+			opacity: 0.9;
+		}
+	}
+}
+
+.loginBtn {
+	text-align: center;
+	margin-top: 45px;
+	button {
+		width: 100%;
+		margin: 0 auto;
+		padding: 15px 0;
+		font-size: 15px;
+		background-color: white;
+	}
+}
+
+.bottomLinks {
+	position: absolute;
+    bottom: 40px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    color: white;
+}
+.bottomLink {
+	font-size: 13px;
+	opacity: 0.7;
+	cursor: pointer;
+	&:hover {
+		opacity: 1;
+	}
+}
+
+.errorMessage {
+	margin: 0px 0 30px;
+	text-align: center;
+	font-size: 14px;
+	color: red;
+	position: absolute;
+	bottom: 32px;
+	width: 100%;
+}

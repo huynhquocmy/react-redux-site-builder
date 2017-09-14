@@ -1,0 +1,29 @@
+@font-face {
+	font-family: 'Gotham';
+	src: url('GothamBookRegular.otf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+@font-face {
+	font-family: 'BebasNeue';
+	src: url('BebasNeue.otf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'LibreBaskerville-Bold';
+	src: url('LibreBaskerville-Bold.ttf');
+}
+
+@font-face {
+	font-family: 'LibreBaskerville-Regular';
+	src: url('LibreBaskerville-Regular.ttf');
+}
+
+@font-face {
+	font-family: 'LibreBaskerville-Italic';
+	src: url('LibreBaskerville-Italic.ttf');
+}

@@ -1,0 +1,112 @@
+.list {
+	position: absolute;
+	width: 300px;
+	left: -330px;
+	height: 100vh;
+	background-color: #2e3544;
+	top: 0;
+	color: white;
+	padding: 15px;
+	text-align: center;
+	transition: 0.3s;
+	z-index: 0;
+	overflow: auto;
+}
+
+.list.active {
+	left: 250px;
+}
+
+
+.removeIcon {
+	position: absolute;
+	right: 10px;
+	top: 8px;
+	z-index: 102;
+	padding: 5px;
+	cursor: pointer;
+	border-radius: 50%;
+	background-color: #eee;
+	width: 30px;
+	height: 30px;
+	opacity: 0;
+	transition: 0.3s;
+	span {
+		color: red;
+		font-size: 14px;
+		position: absolute;
+		top: 10px;
+		right: 34px;
+		font-weight: bold;
+		opacity: 0;
+	}
+	img {
+		width: 20px;
+		position: absolute;
+		top: calc(50% - 10px);
+		right: 10px;
+	}
+	&:hover {
+		opacity: 1;
+		background-color: white;
+		width: 85px;
+		border-radius: 30px;
+		span {
+			opacity: 1;
+			transition: 0.5s;
+		}
+		.deleteBlack {
+			display: none;
+		}
+		.deleteRed {
+			display: block;
+		}
+	}
+}
+
+#items {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.sectionImg {
+	max-width: 100%;
+	cursor: move;
+	display: block;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.sortable-ghost {
+	outline: 1px solid #eee;
+	opacity: 0.8;
+}
+.sectionList {
+	li {
+		position: relative;
+		margin-bottom: 20px;
+	}
+}
+
+.deleteBlack {
+	display: block;
+}
+
+.deleteRed {
+	display: none;
+}
+
+.mask {
+	position: absolute;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	transition: 0.3s;
+	cursor: move;
+	&:hover {
+		opacity: 0.2;
+		background-color: black;
+	}
+}

@@ -1,0 +1,100 @@
+.sidebar {
+	width: 250px;
+	height: 100vh;
+	background-color: #f4f4f4;
+	left: 0;
+	top: 0;
+	border-right: 1px solid #eee;
+	position: fixed;
+	transition: 0.3s;
+	z-index: 2;
+}
+
+.sidebarHeader {
+	text-align: center;
+	font-weight: normal;
+	font-size: 20px;
+	background-color: white;
+	color: #222;
+	margin: 0;
+	padding: 30px 10px;
+	position: relative;
+	z-index: 1;
+	height: 82px;
+	cursor: pointer;
+	box-sizing: border-box;
+	img {
+		width: 60%;
+		margin: 0 auto;
+		display: block;
+	}
+}
+.menu {
+	z-index: 1;
+	position: relative;
+	height: 100vh;
+	background-color: #f4f4f4;
+}
+
+.sidebar__item {
+	color: black;
+	padding: 25px 10px;
+	background: #f4f4f4;
+	border-bottom: 1px solid #eee;
+	cursor: pointer;
+	text-align: center;
+	font-size: 16px;
+	transition: 0.2s;
+	&:hover {
+		background-color: #fff;
+	}
+}
+
+.active {
+	background-color: #2e3544;
+	color: white;
+	border-bottom: 1px solid rgb(42, 47, 58);
+}
+
+.arrowBack {
+	padding: 20px 0;
+	z-index: 999;
+	position: relative;
+	background-color: #f4f4f4;
+	img {
+		display: block;
+		opacity: 0.6;
+		width: 50px;
+		margin: 0 auto;
+		cursor: pointer;
+		transition: 0.3s;
+		&:hover {
+			opacity: 0.8;
+		}
+	}
+}
+
+.mainContent {
+/*	animation-name: LeftRight;
+	animation-duration: 1s;*/
+}
+
+.sidebarContent_large {
+	width: 400px;
+	position: absolute;
+	top: 0;
+	box-shadow: 0 0 9px #999;
+	background-color: #f4f4f4;
+}
+
+.animate {
+	animation-name: LeftRight;
+	animation-duration: 0.3s;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+}
+
+@keyframes LeftRight {
+	0% { left: -200px; }
+	100% { left: 0; }
+}

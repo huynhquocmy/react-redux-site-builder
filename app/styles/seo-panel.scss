@@ -1,0 +1,102 @@
+.seoPanel {
+	width: 400px;
+	background-color: #f4f4f4;
+	min-height: 99vh;
+	padding: 0 20px;
+	box-sizing: border-box;
+	h2 {
+		font-size: 20px;
+		text-align: center;
+		margin: 0;
+		padding: 20px;
+		padding-top: 0;
+	}
+}
+
+.seoPanelArea {
+	label {
+		display: block;
+		margin-bottom: 10px;
+		color: #555;
+		font-size: 14px;
+	}
+	input, textarea {
+		border-radius: 3px;
+		border: 1px solid #eee;
+		padding: 10px 5px;
+		width: 100%;
+		box-sizing: border-box;
+		outline: 0;
+	}
+	input {
+		outline: 0;
+	}
+	textarea {
+		resize: none;
+		height: 100px;
+	}
+}
+
+.seoPanelItem {
+	margin-bottom: 20px;
+}
+
+.seoPanelFooter {
+	display: flex;
+	justify-content: flex-end;
+	button {
+		padding: 10px;
+		width: 130px;
+	}
+}
+
+.seoPanelContent {
+	height: calc(100vh - 200px);
+	overflow: auto;
+}
+.warningText {
+	font-size: 12px;
+	line-height: 18px;
+}
+
+#custom-css {
+	height: 200px;
+	font-size: 20px;
+	font-style: italic;
+	color: #4B89DC;
+	width: 90%;
+}
+
+.customContent {
+	margin-top: 50px;
+}
+
+.customFileBtn {
+	text-align: center;
+	margin-top: 50px;
+	button {
+		width: 80%;
+		padding: 20px;
+		background-color: #eee;
+	}
+}
+
+
+.imagePlace {
+	width: 150px;
+	height: 150px;
+	border: 1px solid #eee;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 20px auto;
+	background-color: white;
+	cursor: pointer;
+	color: gray;
+	font-size: 15px;
+	i {
+		padding-right: 5px;
+		font-size: 30px;
+		font-style: normal;
+	}
+}

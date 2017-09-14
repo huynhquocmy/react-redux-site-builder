@@ -1,0 +1,124 @@
+body {
+	margin: 0;
+}
+.f-container {
+	width: 1200px;
+	margin: 0 auto;
+}
+.f-panel {
+	height: 100vh;
+	background-position: center center;
+	background-size: cover;
+}
+
+.f-header {
+	padding: 15px 30px;
+	border-bottom: 1px solid gray;
+	font-family: "BebasNeue";
+	font-size: 20px;
+	letter-spacing: 2px;
+}
+
+.f-logo {
+	float: left;
+	width: 120px;
+}
+
+.f-menus {
+	float: right;
+	height: 63px;
+	line-height: 63px;
+	text-align: right;
+	width: calc(100% - 120px);
+	vertical-align: middle;
+}
+
+.clear {
+	clear: both;
+}
+
+.f-menu {
+	display: inline-block;
+	margin: 0 20px;
+	height: 100%;
+}
+
+.f-menu a {
+	color: white;
+	text-decoration: none;
+}
+
+h1 {
+	font-size: 72px;
+	font-family: "BebasNeue";
+	letter-spacing: 0;
+	opacity: 0.9;
+	line-height: 70px;
+	margin: 30px 0;
+}
+
+h2 {
+	font-size: 48px;
+	font-family: "BebasNeue";
+	line-height: 52px;
+	letter-spacing: 0;
+	opacity: 0.9;
+}
+
+h3 {
+	font-size: 38px;
+	font-family: "BebasNeue";
+	line-height: 42px;
+	letter-spacing: 0;
+	opacity: 0.9;
+}
+
+h4 {
+	font-size: 32px;
+	font-family: "BebasNeue";
+	line-height: 34px;
+	letter-spacing: 0;
+	opacity: 0.9;
+}
+
+.f-p-body {
+	font-size: 16px;
+	font-family: "LibreBaskerville-Regular";
+	letter-spacing: 0;
+	line-height: 26px;
+}
+
+.f-subtitle {
+	font-size: 16px;
+	font-family: "BebasNeue";
+	letter-spacing: 2px;
+	opacity: 0.7;
+}
+.f-panel-box {
+    width: 520px;
+    background-color: rgb(48, 39, 31);
+    color: white;
+    padding: 30px;
+    box-sizing: border-box;
+    position: relative;
+    left: 100px;
+    top: 78px;
+}
+
+.f-button {
+	font-size: 16px;
+	cursor: pointer;
+    letter-spacing: 2px;
+    font-family: "BebasNeue";
+    color: white;
+    border: 0;
+    border-radius: 2px;
+    padding: 10px 0;
+    width: 260px;
+    margin-top: 10px;
+    outline: 0;
+}
+
+.f-button-green {
+	background-color: #58b9af;
+}

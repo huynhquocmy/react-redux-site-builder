@@ -1,0 +1,44 @@
+.alert {
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	z-index: 999;
+	.alertMask {
+		background-color: #222;
+		opacity: 0.5;
+		height: 100vh;
+		z-index: 1;
+	}
+	.alertContainer {
+		z-index: 5;
+		position: absolute;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 100vh;
+		left: 0;
+		top: 0;
+		width: 100%;
+	}
+	.alertContent {
+		background-color: white;
+		min-width: 200px;
+		border-radius: 3px;
+		padding: 20px;
+
+		p {
+			text-align: center;
+			line-height: 22px;
+			font-size: 14px;
+		}
+	}
+	.alertBtns {
+		display: flex;
+		justify-content: flex-end;
+	}
+	.btn-popup {
+		height: 30px;
+	}
+}

@@ -1,0 +1,80 @@
+.header {
+	padding: 15px 30px;
+	align-items: center;
+	background-color: white;
+	border-bottom: 1px solid #eee;
+	display: flex;
+}
+
+.headerLogo {
+	width: 120px;
+	cursor: pointer;
+	img {
+		display: block;
+		width: 100%;
+	}
+}
+
+.btnNew {
+	padding: 15px;
+	background-color: white;
+	border: 1px solid #ccc;
+	outline: 0;
+	border-radius: 3px;
+	text-transform: uppercase;
+	font-size: 12px;
+	cursor: pointer;
+}
+
+.headerRight {
+	flex-grow: 1;
+	align-items: center;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.headerUser {
+	margin-left: 5px;
+	position: relative;
+	.headerUserName {
+		padding: 10px;
+		border-radius: 50%;
+		border: 1px solid #eee;
+		width: 30px;
+		height: 30px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		cursor: pointer;
+		font-weight: bold;
+		text-transform: uppercase;
+	}
+	.headerUserActions {
+		position: absolute;
+	    transition: 0.2s;
+	    background-color: #ffffff;
+	    border: 1px solid #eee;
+	    font-size: 14px;
+	    width: 150px;
+	    box-shadow: 0px 2px 28px 1px rgba(0, 0, 0, 0.15);
+	    opacity: 0;
+	    right: -200px;
+	    z-index: 99;
+	}
+	.headerUserItem {
+		padding: 12px;
+		border-bottom: 1px solid #eee;
+		cursor: pointer;
+		opacity: 0.7;
+		&:hover {
+			opacity: 1;
+		}
+	}
+	.headerUserItem:last-child {
+		border-bottom: none;
+	}
+	.show.headerUserActions {
+		opacity: 1;
+		right: 0;
+	}
+}
